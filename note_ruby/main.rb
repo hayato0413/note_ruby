@@ -30,8 +30,11 @@ if select_menu == "1"
   p "完了したらCtrl + Dを押してください"
   CSV.open(file_name, "w") do |contents|
     while select_menu == "1"
-      content = gets.chomp
-      contents << [content]
+      content = gets
+      if content != nil
+        contents << [content.comp]
+      else 
+        break
     end
   end
 
@@ -40,8 +43,11 @@ elsif select_menu == "2"
   p "完了したらCtrl + Dを押してください"
   CSV.open(file_name, "a") do |contents|
     while select_menu == "2"
-      content = gets.chomp
-      contents << [content]
+      content = gets
+      if content != nil
+        contents << [content]
+      else
+        break
     end
   end
 end

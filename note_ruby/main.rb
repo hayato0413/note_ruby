@@ -35,6 +35,7 @@ if select_menu == "1"
         contents << [content.comp]
       else 
         break
+      end
     end
   end
 
@@ -48,6 +49,7 @@ elsif select_menu == "2"
         contents << [content.comp]
       else
         break
+      end
     end
   end
 end

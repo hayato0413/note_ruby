@@ -32,7 +32,7 @@ if select_menu == "1"
     while select_menu == "1"
       content = gets
       if content != nil
-        contents << [content.comp]
+        contents << [content.chomp]
       else 
         break
       end
@@ -46,7 +46,7 @@ elsif select_menu == "2"
     while select_menu == "2"
       content = gets
       if content != nil
-        contents << [content.comp]
+        contents << [content.chomp]
       else
         break
       end
